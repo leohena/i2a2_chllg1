@@ -1,0 +1,131 @@
+/* Basic styling for the menu */
+header {
+  background-color: #020202;
+  color: #373636;
+  position: relative; /* Added positioning for logo */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Added flex display */
+  justify-content: space-between; /* Added spacing between logo and menu */
+  align-items: center; /* Vertically align logo and menu */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex; /* Added flex display */
+  align-items: Left; /* Vertically align logo content */
+}
+
+.logo img {
+  width: 200px; /* Adjust the width to your desired size */
+  height: 200px; /* Adjust the height to your desired size */
+  margin-left: -200px; /* Optional: Add spacing between logo and menu */
+  margin-top: 30px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 100px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+/* Media query for mobile menu */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    background-color: #333;
+  }
+
+  .mobile-menu span {
+    background-color: #fff;
+  }
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  label {
+    margin-bottom: 50px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  .product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    display: flex;
+    align-items: Left;
+    margin-bottom: 20px;
+  }
+  
+  .product-list img {
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-details span {
+    margin-bottom: 5px;
+  }
+  
